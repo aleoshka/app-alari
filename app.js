@@ -1,22 +1,8 @@
-let a = 5;
-let b = 5.6;
-console.log(typeof a);
-console.log(typeof b);
-a = 'строка'
-console.log(typeof a);
-e = 'sdfss'
-console.log(typeof e);
+// Данные
+const payRateUSD = 80;
+const projectHours = 40;
+const availableHours = (11 - 2) * 5;
 
-let isAdmin = false;
-console.log(typeof isAdmin);
-
-let c;
-console.log(typeof c);
-c = 5;
-console.log(typeof c);
-
-let d = null;
-console.log(typeof (d == null));
-
-let s;
-console.log(s == null) // true
+//Результат
+console.log('Смогу ли я работать? ' + (availableHours > projectHours));
+console.log('Стоимость работ: ' + (projectHours * payRateUSD) + '$');
